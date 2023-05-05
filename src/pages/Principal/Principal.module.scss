@@ -1,0 +1,50 @@
+.container {
+  color: #fff;
+  // height: 40rem;
+  padding: 10rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+
+  h1 {
+    color: #fff;
+    // font-weight: 100;
+    font-size: 2rem;
+    font-family: "Barlow", sans-serif;
+  }
+  p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .social {
+    display: flex;
+    div {
+      margin: 2rem 0.5rem;
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    h1 {
+      font-size: 3rem;
+    }
+    .arrowDown {
+      font-size: 4.5rem;
+      animation: saltar 1s infinite;
+      @keyframes saltar {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+}
