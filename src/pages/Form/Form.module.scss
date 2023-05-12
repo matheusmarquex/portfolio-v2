@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    button {
+      border: none;
+      padding: 0.6rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 5px;
+      background-color: transparent;
+      border: 1px solid #8a8a8a;
+      color: #8a8a8a;
+      &:hover {
+        background-color: #8a8a8a;
+        color: #000;
+        border: 1px solid #000;
+
+      }
+    }
+    h1{
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    .social{
+        margin: 1rem;
+        font-size: 2.5rem;
+        display: flex;
+        div {
+            margin: 0.6rem;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form {
+      width: 20rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        input {
+          margin: 0.5rem 0;
+          padding: 0.7rem;
+          border: none;
+          border-radius: 5px;
+          background-color: rgb(224, 224, 224);
+        }
+        label {
+           margin-top: 0.5rem;
+        }
+        textarea {
+          margin: 0.5rem 0;
+          padding: 0.5rem;
+          border: none;
+          border-radius: 5px;
+          background-color: rgb(224, 224, 224);
+          width: 100%;
+          height: 10rem;
+          resize: none;
+        }
+      }
+      button {
+        border: none;
+        padding: 0.6rem 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: white;
+        background-color: #8a8a8a;
+        &:hover{
+        background-color: #5c5c5c;
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 5rem 0;
+    .left {
+        width: 50%;
+        display: flex;
+        // justify-content: flex-start;
+        align-items: center;
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .right {
+        width: 50%;
+        p {
+            font-size: 1.5rem;
+        }
+        form{
+            width: 35rem;
+            margin: 0;
+        }
+    }
+  }
+}

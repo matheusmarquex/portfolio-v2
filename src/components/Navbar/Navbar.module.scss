@@ -7,7 +7,6 @@
   user-select: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0.129);
   
-  
   .logoAndHamb {
     display: flex;
     align-items: center;
@@ -25,10 +24,29 @@
     }
   }
   .menu {
+    text-align: center;
     .itemMenu {
       padding: 1rem;
       p {
         font-size: 1.5rem;
+      }
+    }
+    .social{
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      margin-top: 0.7rem;
+      justify-content: center;
+      .itemSocial{
+          cursor: pointer;
+          margin-right: 0.5rem;
+          transition: 0.5s;
+          &:hover{
+              color: #ffffff;
+          }
+      }
+      #git{
+          margin: 0;
       }
     }
   }
@@ -52,12 +70,16 @@
     .menuDesk {
         display: flex;
         align-items: center;
-      .item {
-        margin-right: 1rem;
+      .itemMenu {
+        margin-right: 0.5rem;
+        width: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         p {
           cursor: pointer;
           &:hover {
-            color: #b5b4b4;
+            color: #ffffff;
           }
         }
       }
@@ -72,7 +94,7 @@
             margin-right: 0.5rem;
             transition: 0.5s;
             &:hover{
-                color: #fff;
+                color: #ffffff;
             }
         }
         #git{

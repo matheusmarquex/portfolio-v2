@@ -19,7 +19,19 @@
   display: flex;
   flex-direction: column;
   // justify-content: center;
+  user-select: none;
   color: #8a8a8a;
+  img {
+    -webkit-user-drag: none; /* Safari */
+    -khtml-user-drag: none; /* Konqueror HTML */
+    -moz-user-drag: none; /* Old versions of Firefox */
+    -o-user-drag: none; /* Old versions of Opera */
+    user-drag: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
   .Navbar {
     width: 100%;
     display: flex;
@@ -42,6 +54,7 @@
     /* outros estilos */
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
   }
   
   .Principal {
@@ -56,6 +69,20 @@
 
 }
  .Hello {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(16, 16, 16);
+
+}
+.Tech, .Form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+
+}
+.Projects {
   width: 100%;
   display: flex;
   justify-content: center;

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    border-bottom: 1px solid rgb(89, 255, 0);
+    font-size: 2.2rem;
+    margin: 3rem 0;
+  }
+  .imgsTechs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    img {
+      width: 5rem;
+      padding: 0.5rem;
+      filter: grayscale(100%);
+      &:hover {
+        transition: 0.5s;
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    h1{
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+    }
+    .imgsTechs {
+        display: flex;
+        margin: 1rem 0;
+        margin-bottom: 3rem;
+        img {
+            width: 6rem;
+        }
+    }
+  }
+}
